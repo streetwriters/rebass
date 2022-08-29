@@ -1,6 +1,6 @@
 {
   "name": "@streetwriters/rebass-preset-material",
-  "version": "4.0.7",
+  "version": "5.0.0",
   "description": "Material Design theme preset for use with Rebass",
   "main": "dist/index.js",
   "scripts": {
@@ -27,6 +27,6 @@
   },
   "gitHead": "f0f01843e9fb63ca69112d7e97a1451b27ee9e6c",
   "dependencies": {
-    "@streetwriters/rebass-bundler": "^4.0.5"
+    "@streetwriters/rebass-bundler": "^4.0.6"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@streetwriters/reflexbox",
-  "version": "4.0.7",
+  "version": "5.0.0",
   "description": "Responsive React grid system built with Styled System, with support for Emotion and Styled Components",
   "main": "dist/index.js",
   "keywords": [
@@ -19,9 +19,9 @@
     "styled-components": "NODE_ENV=styled babel src -d styled-components"
   },
   "dependencies": {
-    "@emotion/styled": "^11.1.0",
     "@emotion/react": "^11.10.0",
-    "@streetwriters/rebass-bundler": "*",
+    "@emotion/styled": "^11.1.0",
+    "@streetwriters/rebass-bundler": "^4.0.6",
     "@styled-system/css": "^5.1.5",
     "@styled-system/should-forward-prop": "^5.1.5",
     "styled-system": "^5.1.5"

@@ -1,6 +1,6 @@
 {
   "name": "@streetwriters/rebass-space",
-  "version": "4.0.7",
+  "version": "5.0.0",
   "description": "React component for applying responsive margin and padding to child elements without a wrapping HTML container. Built with Styled System.",
   "main": "dist/index.js",
   "scripts": {
@@ -19,9 +19,9 @@
   "license": "MIT",
   "repository": "streetwriters/rebass",
   "dependencies": {
-    "@emotion/styled": "^11.10.0",
     "@emotion/react": "^11.10.0",
-    "@streetwriters/rebass-bundler": "*",
+    "@emotion/styled": "^11.10.0",
+    "@streetwriters/rebass-bundler": "^4.0.6",
     "styled-system": ">=5.1.5"
   },
   "gitHead": "f0f01843e9fb63ca69112d7e97a1451b27ee9e6c",

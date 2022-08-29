@@ -1,6 +1,6 @@
 {
   "name": "@streetwriters/rebass",
-  "version": "4.0.7",
+  "version": "5.0.0",
   "description": "React primitive UI components built with Styled System",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -24,8 +24,8 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "dependencies": {
-    "@streetwriters/rebass-bundler": "*",
-    "@streetwriters/reflexbox": "*"
+    "@streetwriters/rebass-bundler": "^4.0.6",
+    "@streetwriters/reflexbox": "^5.0.0"
   },
   "repository": "streetwriters/rebass",
   "bugs": {

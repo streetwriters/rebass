@@ -1,15 +1,15 @@
 {
   "name": "@streetwriters/rebass-forms",
-  "version": "4.0.7",
+  "version": "5.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "scripts": {
     "prepare": "rebass-bundler"
   },
   "dependencies": {
-    "@streetwriters/rebass-bundler": "*",
-    "@styled-system/should-forward-prop": "^5.1.5",
-    "@streetwriters/reflexbox": "*"
+    "@streetwriters/rebass-bundler": "^4.0.6",
+    "@streetwriters/reflexbox": "^5.0.0",
+    "@styled-system/should-forward-prop": "^5.1.5"
   },
   "repository": "streetwriters/rebass",
   "bugs": {
