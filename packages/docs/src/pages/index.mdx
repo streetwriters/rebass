@@ -1,12 +1,6 @@
-import { Box, Flex, Button } from 'rebass'
-import {
-  Banner,
-  NavGrid,
-  Container,
-  Grid,
-  LogoGrid,
-} from '..'
-import Logo from '../components/logo'
+import { Box, Flex, Button } from "rebass";
+import { Banner, NavGrid, Container, Grid, LogoGrid } from "..";
+import Logo from "../components/logo";
 
 <Banner>
 <Box mt={5} />
@@ -52,14 +46,14 @@ npm i rebass
 [![downloads][]][npm]
 [![coverage][]][codecov]
 
-[stars]: https://flat.badgen.net/github/stars/rebassjs/rebass?color=33e
-[github]: https://github.com/rebassjs/rebass
-[build status]: https://flat.badgen.net/travis/rebassjs/rebass/master?color=33e
-[travis]: https://travis-ci.org/rebassjs/rebass
+[stars]: https://flat.badgen.net/github/stars/streetwriters/rebass?color=33e
+[github]: https://github.com/streetwriters/rebass
+[build status]: https://flat.badgen.net/travis/streetwriters/rebass/master?color=33e
+[travis]: https://travis-ci.org/streetwriters/rebass
 [downloads]: https://flat.badgen.net/npm/dm/rebass?color=33e
 [npm]: https://npmjs.com/package/rebass
-[coverage]: https://flat.badgen.net/codecov/c/github/rebassjs/rebass?color=33e
-[codecov]: https://codecov.io/github/rebassjs/rebass
+[coverage]: https://flat.badgen.net/codecov/c/github/streetwriters/rebass?color=33e
+[codecov]: https://codecov.io/github/streetwriters/rebass
 
 <Grid py={5} sx={{ fontWeight: 'bold' }}>
 
@@ -76,15 +70,13 @@ npm i rebass
 </Grid>
 
 ```jsx live=true
-<Flex
-  alignItems='center'
-  px={3}
-  py={4}
-  bg='muted'>
+<Flex alignItems="center" px={3} py={4} bg="muted">
   <Heading>Hello</Heading>
-  <Box mx='auto' />
+  <Box mx="auto" />
   <Button>Beep</Button>
-  <Button ml={2} variant='secondary'>Boop</Button>
+  <Button ml={2} variant="secondary">
+    Boop
+  </Button>
 </Flex>
 ```
 
@@ -110,14 +102,11 @@ npm i rebass
 
 ## Get Started
 
-<Button as='a'
-  variant='big'
-  href='/getting-started'>
+<Button as="a" variant="big" href="/getting-started">
   Read the docs
 </Button>
 
 </Container>
-
 
 [styled system]: https://styled-system.com
 [theme ui]: https://theme-ui.com

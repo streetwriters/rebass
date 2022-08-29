@@ -17,7 +17,7 @@
   ],
   "author": "Brent Jackson",
   "license": "MIT",
-  "repository": "rebassjs/rebass",
+  "repository": "streetwriters/rebass",
   "dependencies": {
     "@emotion/styled": "^11.10.0",
     "@emotion/react": "^11.10.0",

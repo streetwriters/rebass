@@ -1,8 +1,7 @@
-
 # Reflexbox
 
 📦 Ergonomic, responsive React layout and grid system.
-The original *Box* component™ since 2015
+The original _Box_ component™ since 2015
 
 [![Build Status][badge]][travis]
 [![Downloads][downloads-badge]][npm]
@@ -10,8 +9,8 @@ The original *Box* component™ since 2015
 [![MIT License][license-badge]](LICENSE.md)
 [![system-ui/theme](https://flat.badgen.net/badge/system-ui/theme/black)](https://system-ui.com/theme)
 
-[badge]: https://flat.badgen.net/travis/rebassjs/rebass/master
-[travis]: https://travis-ci.org/rebassjs/rebass
+[badge]: https://flat.badgen.net/travis/streetwriters/rebass/master
+[travis]: https://travis-ci.org/streetwriters/rebass
 [downloads-badge]: https://flat.badgen.net/npm/dw/reflexbox
 [version-badge]: https://flat.badgen.net/npm/v/reflexbox
 [license-badge]: https://flat.badgen.net/badge/license/MIT/blue
@@ -34,22 +33,19 @@ npm i reflexbox
 ```
 
 ```jsx
-import React from 'react'
-import { Flex, Box } from 'reflexbox'
+import React from "react";
+import { Flex, Box } from "reflexbox";
 
-export default props =>
-  <Flex flexWrap='wrap'>
-    <Box
-      width={[ 1, 1/2 ]}
-      p={3}>
+export default (props) => (
+  <Flex flexWrap="wrap">
+    <Box width={[1, 1 / 2]} p={3}>
       Reflex
     </Box>
-    <Box
-      width={[ 1, 1/2 ]}
-      p={3}>
+    <Box width={[1, 1 / 2]} p={3}>
       Box
     </Box>
   </Flex>
+);
 ```
 
 ### `sx` Prop
@@ -64,7 +60,7 @@ This allows you to share design constraints for typography, color, and layout th
 <Box
   sx={{
     p: 4,
-    color: 'primary',
+    color: "primary",
   }}
 />
 ```
@@ -82,40 +78,38 @@ npm i emotion-theming
 ```
 
 ```jsx
-import React from 'react'
-import { ThemeProvider } from 'emotion-theming'
-import { Flex, Box } from 'reflexbox'
+import React from "react";
+import { ThemeProvider } from "emotion-theming";
+import { Flex, Box } from "reflexbox";
 
 const theme = {
-  breakpoints: [
-    '40em', '52em', '64em',
-  ],
+  breakpoints: ["40em", "52em", "64em"],
   colors: {
-    text: '#000',
-    background: '#fff',
-    primary: '#07c',
+    text: "#000",
+    background: "#fff",
+    primary: "#07c",
   },
-  space: [
-    0, 4, 8, 16, 32, 64, 128, 256,
-  ],
-}
+  space: [0, 4, 8, 16, 32, 64, 128, 256],
+};
 
-export default props =>
+export default (props) => (
   <ThemeProvider theme={theme}>
     <Box
       sx={{
         p: 4,
-        bg: 'primary',
-      }}>
+        bg: "primary",
+      }}
+    >
       Hello
     </Box>
   </ThemeProvider>
+);
 ```
 
 For use with [Theme UI][], use `gatsby-plugin-theme-ui` or import the Theme UI `ThemeProvider` instead.
 
 ```js
-import { ThemeProvider } from 'theme-ui'
+import { ThemeProvider } from "theme-ui";
 ```
 
 ## Variants
@@ -129,31 +123,31 @@ Add a `variants` object to your theme and include any variants as style objects.
 // example theme
 export default {
   colors: {
-    text: '#000',
-    background: '#fff',
-    primary: '#07c',
+    text: "#000",
+    background: "#fff",
+    primary: "#07c",
   },
   radii: {
     default: 4,
   },
   shadows: {
-    card: '0 0 4px rgba(0, 0, 0, .125)',
+    card: "0 0 4px rgba(0, 0, 0, .125)",
   },
   variants: {
     card: {
       p: 3,
-      borderRadius: 'default',
-      bg: 'white',
-      boxShadow: 'card',
+      borderRadius: "default",
+      bg: "white",
+      boxShadow: "card",
     },
     badge: {
-      color: 'white',
-      bg: 'primary',
+      color: "white",
+      bg: "primary",
       p: 1,
-      borderRadius: 'default',
+      borderRadius: "default",
     },
   },
-}
+};
 ```
 
 To apply a variant to your component, pass the name to the `variant` prop.
@@ -173,7 +167,7 @@ See the [Styled System][] docs for more.
 // 100% width at the smallest viewport width
 // 50% width at the next breakpoint
 // 25% width at the next breakpoint
-<Box width={[ '100%', '50%', '25%' ]} />
+<Box width={["100%", "50%", "25%"]} />
 ```
 
 You can customize the widths used for each breakpoint by defining a `theme.breakpoints` array in your theme.
@@ -185,78 +179,78 @@ The `Box` and `Flex` components accept the following props:
 
 ### Space Props
 
-Prop | Theme Key
----|---
-`margin`, `m`         | `space`
-`marginTop`, `mt`     | `space`
-`marginRight`, `mr`   | `space`
-`marginBottom`, `mb`  | `space`
-`marginLeft`, `ml`  | `space`
-`marginX`, `mx`  | `space`
-`marginY`, `my`  | `space`
-`padding`, `p`         | `space`
-`paddingTop`, `pt`     | `space`
-`paddingRight`, `pr`   | `space`
-`paddingBottom`, `pb`  | `space`
-`paddingLeft`, `pl`    | `space`
-`paddingX`, `px`  | `space`
-`paddingY`, `py`  | `space`
+| Prop                  | Theme Key |
+| --------------------- | --------- |
+| `margin`, `m`         | `space`   |
+| `marginTop`, `mt`     | `space`   |
+| `marginRight`, `mr`   | `space`   |
+| `marginBottom`, `mb`  | `space`   |
+| `marginLeft`, `ml`    | `space`   |
+| `marginX`, `mx`       | `space`   |
+| `marginY`, `my`       | `space`   |
+| `padding`, `p`        | `space`   |
+| `paddingTop`, `pt`    | `space`   |
+| `paddingRight`, `pr`  | `space`   |
+| `paddingBottom`, `pb` | `space`   |
+| `paddingLeft`, `pl`   | `space`   |
+| `paddingX`, `px`      | `space`   |
+| `paddingY`, `py`      | `space`   |
 
 ### Layout Props
 
-Prop | Theme Key
----|---
-`width` | `sizes`
-`height` | `sizes`
-`minWidth` | `sizes`
-`maxWidth` | `sizes`
-`minHeight` | `sizes`
-`maxHeight` | `sizes`
+| Prop        | Theme Key |
+| ----------- | --------- |
+| `width`     | `sizes`   |
+| `height`    | `sizes`   |
+| `minWidth`  | `sizes`   |
+| `maxWidth`  | `sizes`   |
+| `minHeight` | `sizes`   |
+| `maxHeight` | `sizes`   |
 
 ### Typography Props
 
-Prop | Theme Key
----|---
-`fontFamily` | `fonts`
-`fontSize` | `fontSizes`
-`fontWeight` | `fontWeights`
-`lineHeight` | `lineHeights`
-`letterSpacing` | `letterSpacings`
-`fontStyle` | N/A
-`textAlign` | N/A
+| Prop            | Theme Key        |
+| --------------- | ---------------- |
+| `fontFamily`    | `fonts`          |
+| `fontSize`      | `fontSizes`      |
+| `fontWeight`    | `fontWeights`    |
+| `lineHeight`    | `lineHeights`    |
+| `letterSpacing` | `letterSpacings` |
+| `fontStyle`     | N/A              |
+| `textAlign`     | N/A              |
 
 ### Color Props
 
-Prop | Theme Key
----|---
-`color` | `colors`
-`backgroundColor`, `bg` | `colors`
-`opacity` | N/A
+| Prop                    | Theme Key |
+| ----------------------- | --------- |
+| `color`                 | `colors`  |
+| `backgroundColor`, `bg` | `colors`  |
+| `opacity`               | N/A       |
 
 ### Flexbox Props
 
-Prop | Theme Key
----|---
-`alignItems` | N/A
-`alignContent` | N/A
-`justifyItems` | N/A
-`justifyContent` | N/A
-`flexWrap` | N/A
-`flexDirection` | N/A
-`flex` | N/A
-`flexGrow` | N/A
-`flexShrink` | N/A
-`flexBasis` | N/A
-`justifySelf` | N/A
-`alignSelf` | N/A
-`order` | N/A
+| Prop             | Theme Key |
+| ---------------- | --------- |
+| `alignItems`     | N/A       |
+| `alignContent`   | N/A       |
+| `justifyItems`   | N/A       |
+| `justifyContent` | N/A       |
+| `flexWrap`       | N/A       |
+| `flexDirection`  | N/A       |
+| `flex`           | N/A       |
+| `flexGrow`       | N/A       |
+| `flexShrink`     | N/A       |
+| `flexBasis`      | N/A       |
+| `justifySelf`    | N/A       |
+| `alignSelf`      | N/A       |
+| `order`          | N/A       |
 
 ## Styled Components
 
 To use Reflexbox with Styled Components, import components from `reflexbox/styled-components`.
 
 ```js
-import { Flex, Box } from 'reflexbox/styled-components'
+import { Flex, Box } from "reflexbox/styled-components";
 ```
 
 ## About
@@ -271,4 +265,3 @@ Reflexbox originally appeared with the original version of Rebass in 2015.
 [theme ui]: https://theme-ui.com
 [emotion]: https://emotion.sh
 [styled components]: https://styled-components.com
-

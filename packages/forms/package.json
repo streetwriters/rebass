@@ -11,9 +11,9 @@
     "@styled-system/should-forward-prop": "^5.1.5",
     "reflexbox": "*"
   },
-  "repository": "rebassjs/rebass",
+  "repository": "streetwriters/rebass",
   "bugs": {
-    "url": "https://github.com/rebassjs/rebass/issues"
+    "url": "https://github.com/streetwriters/rebass/issues"
   },
   "license": "MIT",
   "publishConfig": {

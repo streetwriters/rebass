@@ -1,5 +1,5 @@
-import { Note } from '../..'
-export const title = 'Using Rebass without Context'
+import { Note } from "../..";
+export const title = "Using Rebass without Context";
 
 # Using Rebass without Context
 
@@ -10,19 +10,14 @@ you can pass a `theme` object as a prop to any of the components.
 
 This guide is a work-in-progress.
 If you'd like to help make this better,
-please open an issue or pull request on [GitHub](https://github.com/rebassjs/rebass).
+please open an issue or pull request on [GitHub](https://github.com/streetwriters/rebass).
 
 </Note>
 
 ```jsx
-import React from 'react'
-import { Box } from 'rebass'
-import theme from './theme'
+import React from "react";
+import { Box } from "rebass";
+import theme from "./theme";
 
-export default props =>
-  <Box
-    {...props}
-    theme={theme}
-  />
+export default (props) => <Box {...props} theme={theme} />;
 ```
-

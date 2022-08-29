@@ -10,7 +10,7 @@
     "@rebass/bundler": "*",
     "reflexbox": "*"
   },
-  "repository": "rebassjs/rebass",
+  "repository": "streetwriters/rebass",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

@@ -19,7 +19,7 @@
     "theme-ui"
   ],
   "author": "Brent Jackson",
-  "repository": "rebassjs/rebass",
+  "repository": "streetwriters/rebass",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

@@ -1,4 +1,3 @@
-
 <img src='https://rebassjs.org/logo.svg' width='128' height='128' />
 
 # Rebass
@@ -12,11 +11,10 @@ https://rebassjs.org
 [![Version][version-badge]][npm]
 [![MIT License][license-badge]](LICENSE.md)
 
-[badge]: https://flat.badgen.net/travis/rebassjs/rebass/master
-[travis]: https://travis-ci.org/rebassjs/rebass
-[coverage-badge]: https://flat.badgen.net/codecov/c/github/rebassjs/rebass
-[coverage]: https://codecov.io/github/rebassjs/rebass
-
+[badge]: https://flat.badgen.net/travis/streetwriters/rebass/master
+[travis]: https://travis-ci.org/streetwriters/rebass
+[coverage-badge]: https://flat.badgen.net/codecov/c/github/streetwriters/rebass
+[coverage]: https://codecov.io/github/streetwriters/rebass
 [downloads-badge]: https://flat.badgen.net/npm/dw/rebass
 [version-badge]: https://flat.badgen.net/npm/v/rebass
 [license-badge]: https://flat.badgen.net/badge/license/MIT/blue
@@ -29,15 +27,17 @@ npm i rebass
 ## Getting Started
 
 ```jsx
-import React from 'react'
-import { Box, Heading, Button } from 'rebass'
+import React from "react";
+import { Box, Heading, Button } from "rebass";
 
-export default props =>
+export default (props) => (
   <Box>
     <Heading>Hello</Heading>
     <Button>Rebass</Button>
   </Box>
+);
 ```
+
 ## Features
 
 - Start your design system without boiling the ocean
@@ -49,7 +49,6 @@ export default props =>
 - Flexbox layout with the Box and Flex components
 - Flexibility built in for high design & development velocity
 - Minimal footprint at about 4KB
-
 
 [reflexbox]: https://rebassjs.org/reflexbox
 
@@ -102,8 +101,7 @@ for more on some of the thought behind Rebass.
 ## CodeSandbox
 
 Try it out:
-https://codesandbox.io/s/github/rebassjs/rebass/tree/master/examples/sandbox
-
+https://codesandbox.io/s/github/streetwriters/rebass/tree/master/examples/sandbox
 
 ### Related
 
@@ -123,11 +121,10 @@ See the [Migration Guide](https://rebassjs.org/migrating/).
 
 #### Previous Versions
 
-- [v3.2.2](https://github.com/rebassjs/rebass/tree/v3.2.2) – [v3 Docs](https://rebass-v3.now.sh)
-- [v2.3.2](https://github.com/rebassjs/rebass/tree/v2) – [Docs for Rebass v2](https://rebass-v2.now.sh)
-- [v1.0.7](https://github.com/rebassjs/rebass/tree/v1.0.7)
+- [v3.2.2](https://github.com/streetwriters/rebass/tree/v3.2.2) – [v3 Docs](https://rebass-v3.now.sh)
+- [v2.3.2](https://github.com/streetwriters/rebass/tree/v2) – [Docs for Rebass v2](https://rebass-v2.now.sh)
+- [v1.0.7](https://github.com/streetwriters/rebass/tree/v1.0.7)
 
 ---
 
 [Contributing](CONTRIBUTING.md) | [MIT License](LICENSE.md)
-
