@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "docs",
+  "name": "@streetwriters/rebass-docs",
   "version": "4.0.7",
   "main": "index.js",
   "license": "MIT",
