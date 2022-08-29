@@ -1,6 +1,6 @@
 {
   "name": "@rebass/preset",
-  "version": "4.0.5",
+  "version": "5.0.0",
   "description": "Base theme preset for use with Rebass",
   "main": "dist/index.js",
   "scripts": {
@@ -24,5 +24,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "f0f01843e9fb63ca69112d7e97a1451b27ee9e6c"
+  "gitHead": "f0f01843e9fb63ca69112d7e97a1451b27ee9e6c",
+  "dependencies": {
+    "@rebass/bundler": "^4.0.5",
+    "undefined": "/home/thecodrr/Sources/Repos/rebass/packages/bundler"
+  }
 }

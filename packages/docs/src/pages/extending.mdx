@@ -1,5 +1,5 @@
-import Note from '../components/note'
-export const title = 'Extending'
+import Note from "../components/note";
+export const title = "Extending";
 
 # Extending
 
@@ -12,18 +12,19 @@ that you define in your theme.
 To extend a component, pass props through and define custom styles in the `sx` prop.
 
 ```jsx
-import React from 'react'
-import { Box } from 'rebass'
+import React from "react";
+import { Box } from "rebass";
 
-const Container = props =>
+const Container = (props) => (
   <Box
     {...props}
     sx={{
-      maxWidth: '1024px',
-      mx: 'auto',
+      maxWidth: "1024px",
+      mx: "auto",
       px: 3,
     }}
   />
+);
 ```
 
 If you prefer, you can also use `@emotion/styled` to extend components.
@@ -56,6 +57,7 @@ sx={{
   border: '1px solid tomato',
 }}
 ```
+
 ```js
 // use regular properties instead
 sx={{
@@ -78,13 +80,9 @@ Instead of using the `defaultProps` property on your component, define defaults 
 The `{...props}` from the outside will override the ones you set on the component.
 
 ```jsx
-const Container = props =>
-  <Box
-    maxWidth='container'
-    px={3}
-    mx='auto'
-    {...props}
-  />
+const Container = (props) => (
+  <Box maxWidth="container" px={3} mx="auto" {...props} />
+);
 ```
 
 ## Default Variants
@@ -104,11 +102,7 @@ variants: {
 Then add the default prop in your component.
 
 ```jsx
-const Badge = props =>
-  <Box
-    variant='badge'
-    {...props}
-  />
+const Badge = (props) => <Box variant="badge" {...props} />;
 ```
 
 ## Example Extensions
@@ -116,7 +110,7 @@ const Badge = props =>
 ### Avatar
 
 ```jsx
-const Avatar = props =>
+const Avatar = (props) => (
   <Image
     {...props}
     sx={{
@@ -125,93 +119,80 @@ const Avatar = props =>
       borderRadius: 9999,
     }}
   />
+);
 ```
 
 ### Embed
 
 ```jsx
-const Embed = props =>
+const Embed = (props) => (
   <Box
     {...props}
     sx={{
-      width: '100%',
+      width: "100%",
       height: 0,
-      paddingBottom: (9 / 16) + '%',
-      position: 'relative',
-      overflow: 'hidden',
-      '& > iframe': {
-        position: 'absolute',
-        width: '100%',
-        height: '100%',
+      paddingBottom: 9 / 16 + "%",
+      position: "relative",
+      overflow: "hidden",
+      "& > iframe": {
+        position: "absolute",
+        width: "100%",
+        height: "100%",
         top: 0,
         bottom: 0,
         left: 0,
-        border: 0
-      }
+        border: 0,
+      },
     }}
   />
+);
 ```
 
 ### Pre
 
 ```jsx
-const Pre = props =>
+const Pre = (props) => (
   <Text
     {...props}
-    as='pre'
+    as="pre"
     sx={{
-      fontFamily: 'monospace',
+      fontFamily: "monospace",
       p: 2,
-      color: 'secondary',
-      bg: 'muted',
-      overflowX: 'auto',
+      color: "secondary",
+      bg: "muted",
+      overflowX: "auto",
     }}
   />
+);
 ```
 
 ### Fixed
 
 ```jsx
-const Fixed = props =>
+const Fixed = (props) => (
   <Box
     {...props}
     sx={{
-      position: 'fixed'
+      position: "fixed",
     }}
   />
+);
 ```
 
 ### Divider
 
 ```jsx
-const Divider = props =>
+const Divider = (props) => (
   <Box
     {...props}
-    as='hr'
+    as="hr"
     sx={{
-      bg: 'gray',
+      bg: "gray",
       border: 0,
-      height: 1
+      height: 1,
     }}
   />
+);
 ```
-
-<!--
-
-### Toolbar
-
-```jsx
-const Toolbar = props =>
-  <Flex
-    {...props}
-    sx={{
-      px: 2,
-      color: 'white',
-      bg: 'black',
-      alignItems: 'center',
-    }}
-  />
-```
--->
 
 See the [Recipes](/recipes) page for more examples.

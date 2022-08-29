@@ -1,4 +1,4 @@
-export const title = 'CSS Grid'
+export const title = "CSS Grid";
 
 # CSS Grid
 
@@ -18,17 +18,18 @@ Create an extension of the Box component that can wrap other elements to apply a
 
 ```jsx
 // example grid layout component
-import React from 'react'
-import { Box } from 'rebass'
+import React from "react";
+import { Box } from "rebass";
 
-export default props =>
+export default (props) => (
   <Box
     {...props}
     sx={{
-      display: 'grid',
-      gridGap: 3,     // theme.space[3]
+      display: "grid",
+      gridGap: 3, // theme.space[3]
     }}
   />
+);
 ```
 
 By using the `sx` prop, CSS properties such as `gridGap` will use values from your theme object.
@@ -40,18 +41,19 @@ Using the `grid-auto-columns` property, you can quickly lay out child elements i
 
 ```jsx
 // example grid layout component
-import React from 'react'
-import { Box } from 'rebass'
+import React from "react";
+import { Box } from "rebass";
 
-export default props =>
+export default (props) => (
   <Box
     {...props}
     sx={{
-      display: 'grid',
-      gridGap: 3,     // theme.space[3]
-      gridTemplateColumns: 'repeat(auto-fit, minmax(128px, 1fr))',
+      display: "grid",
+      gridGap: 3, // theme.space[3]
+      gridTemplateColumns: "repeat(auto-fit, minmax(128px, 1fr))",
     }}
   />
+);
 ```
 
 ## Demo
@@ -61,19 +63,24 @@ Use the live demo below to explore different layouts using CSS Grid.
 ```jsx live=true
 <Box
   sx={{
-    display: 'grid',
+    display: "grid",
     gridGap: 4,
-    gridTemplateColumns: 'repeat(auto-fit, minmax(128px, 1fr))',
-  }}>
-  <Heading p={3} bg='muted'>Hello</Heading>
-  <Box p={3} color='background' bg='primary'>CSS Grid</Box>
+    gridTemplateColumns: "repeat(auto-fit, minmax(128px, 1fr))",
+  }}
+>
+  <Heading p={3} bg="muted">
+    Hello
+  </Heading>
+  <Box p={3} color="background" bg="primary">
+    CSS Grid
+  </Box>
 </Box>
 ```
 
 ## Resources
 
 There are many resources for learning how to use CSS Grid layout.
-To fully understand any API in CSS, I *highly* recommend reading the specification, since it is the authoritative source for how CSS is intended to work:
+To fully understand any API in CSS, I _highly_ recommend reading the specification, since it is the authoritative source for how CSS is intended to work:
 
 **[CSS Grid Layout Module Level 1][spec]**
 
@@ -92,6 +99,4 @@ Additional resources:
 [css tricks]: https://css-tricks.com/snippets/css/complete-guide-grid/
 [grid by example]: https://gridbyexample.com/
 [simmons-lab]: https://labs.jensimmons.com/
-
-<!-- vet this? -->
 [learn-css-grid]: https://learncssgrid.com/

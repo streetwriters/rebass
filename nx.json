@@ -1,0 +1,18 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["prepare", "start"]
+      }
+    }
+  },
+  "targetDefaults": {
+    "prepare": {
+      "dependsOn": ["^prepare"]
+    },
+    "start": {
+      "dependsOn": ["^prepare"]
+    }
+  }
+}

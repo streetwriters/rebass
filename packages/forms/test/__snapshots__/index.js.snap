@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox renders 1`] = `
-.emotion-3 {
+.emotion-0 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
 }
 
-.emotion-0 {
+.emotion-1 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -19,38 +19,38 @@ exports[`Checkbox renders 1`] = `
   overflow: hidden;
 }
 
-.emotion-1 {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  display: none;
-  width: 24px;
-  height: 24px;
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  margin-right: 8px;
-  border-radius: 4px;
-  color: gray;
-}
-
-input:checked ~ .emotion-1 {
-  display: block;
-}
-
-input:checked ~ .emotion-1 {
-  color: primary;
-}
-
-input:focus ~ .emotion-1 {
-  color: primary;
-  background-color: highlight;
-}
-
 .emotion-2 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
+  display: none;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-right: 8px;
+  border-radius: 4px;
+  color: gray;
+}
+
+input:checked~.emotion-2 {
+  display: block;
+}
+
+input:checked~.emotion-2 {
+  color: primary;
+}
+
+input:focus~.emotion-2 {
+  color: primary;
+  background-color: highlight;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   display: block;
   width: 24px;
   height: 24px;
@@ -62,29 +62,29 @@ input:focus ~ .emotion-1 {
   color: gray;
 }
 
-input:checked ~ .emotion-2 {
+input:checked~.emotion-3 {
   display: none;
 }
 
-input:checked ~ .emotion-2 {
+input:checked~.emotion-3 {
   color: primary;
 }
 
-input:focus ~ .emotion-2 {
+input:focus~.emotion-3 {
   color: primary;
   background-color: highlight;
 }
 
 <div
-  className="emotion-3"
+  className="emotion-0"
 >
   <input
-    className="emotion-0"
+    className="emotion-1"
     type="checkbox"
   />
   <svg
     aria-hidden="true"
-    className="emotion-1"
+    className="emotion-2"
     fill="currentcolor"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ input:focus ~ .emotion-2 {
   </svg>
   <svg
     aria-hidden="true"
-    className="emotion-2"
+    className="emotion-3"
     fill="currentcolor"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
@@ -117,6 +117,7 @@ exports[`Input renders 1`] = `
   padding: 8px;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   font-size: inherit;
   line-height: inherit;
@@ -150,13 +151,13 @@ exports[`Label renders 1`] = `
 `;
 
 exports[`Radio renders 1`] = `
-.emotion-3 {
+.emotion-0 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
 }
 
-.emotion-0 {
+.emotion-1 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
@@ -168,37 +169,37 @@ exports[`Radio renders 1`] = `
   overflow: hidden;
 }
 
-.emotion-1 {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  display: none;
-  width: 24px;
-  height: 24px;
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  margin-right: 8px;
-  border-radius: 9999px;
-  color: gray;
-}
-
-input:checked ~ .emotion-1 {
-  display: block;
-}
-
-input:checked ~ .emotion-1 {
-  color: primary;
-}
-
-input:focus ~ .emotion-1 {
-  background-color: highlight;
-}
-
 .emotion-2 {
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
+  display: none;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  margin-right: 8px;
+  border-radius: 9999px;
+  color: gray;
+}
+
+input:checked~.emotion-2 {
+  display: block;
+}
+
+input:checked~.emotion-2 {
+  color: primary;
+}
+
+input:focus~.emotion-2 {
+  background-color: highlight;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   display: block;
   width: 24px;
   height: 24px;
@@ -210,28 +211,28 @@ input:focus ~ .emotion-1 {
   color: gray;
 }
 
-input:checked ~ .emotion-2 {
+input:checked~.emotion-3 {
   display: none;
 }
 
-input:checked ~ .emotion-2 {
+input:checked~.emotion-3 {
   color: primary;
 }
 
-input:focus ~ .emotion-2 {
+input:focus~.emotion-3 {
   background-color: highlight;
 }
 
 <div
-  className="emotion-3"
+  className="emotion-0"
 >
   <input
-    className="emotion-0"
+    className="emotion-1"
     type="radio"
   />
   <svg
     aria-hidden="true"
-    className="emotion-1"
+    className="emotion-2"
     fill="currentcolor"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
@@ -242,7 +243,7 @@ input:focus ~ .emotion-2 {
   </svg>
   <svg
     aria-hidden="true"
-    className="emotion-2"
+    className="emotion-3"
     fill="currentcolor"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
@@ -259,11 +260,22 @@ exports[`Select renders 1`] = `
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
   display: block;
   width: 100%;
   padding: 8px;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   font-size: inherit;
   line-height: inherit;
@@ -277,16 +289,6 @@ exports[`Select renders 1`] = `
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-1 {
-  box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
   margin-left: -28px;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -297,13 +299,13 @@ exports[`Select renders 1`] = `
 }
 
 <div
-  className="emotion-2"
+  className="emotion-0"
 >
   <select
-    className="emotion-0"
+    className="emotion-1"
   />
   <svg
-    className="emotion-1"
+    className="emotion-2"
     fill="currentcolor"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
@@ -325,6 +327,7 @@ exports[`Textarea renders 1`] = `
   padding: 8px;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   font-size: inherit;
   line-height: inherit;

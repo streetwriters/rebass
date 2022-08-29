@@ -5,7 +5,7 @@ import Head from './head'
 import SkipLink from './skip-link'
 import Header from './header'
 import Footer from './footer'
-import Nav from './nav'
+import Nav from '../pages/layout/nav'
 import EditLink from './edit-link'
 
 const Sidebar = props =>
