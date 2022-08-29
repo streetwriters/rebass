@@ -1,5 +1,5 @@
 {
-  "name": "@rebass/bundler",
+  "name": "@streetwriters/rebass-bundler",
   "version": "4.0.5",
   "bin": {
     "rebass-bundler": "./index.js"
@@ -14,6 +14,7 @@
   },
   "gitHead": "f0f01843e9fb63ca69112d7e97a1451b27ee9e6c",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Box, Link, Button } from "rebass";
+import { Flex, Box, Link, Button } from "@streetwriters/rebass";
 import { useColorMode } from "theme-ui";
 
 const modes = ["lite", "dark", "gray", "hack", "pink"];

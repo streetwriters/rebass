@@ -1,5 +1,5 @@
 {
-  "name": "rebass",
+  "name": "@streetwriters/rebass",
   "version": "4.0.7",
   "description": "React primitive UI components built with Styled System",
   "main": "dist/index.js",
@@ -24,12 +24,16 @@
   "author": "Brent Jackson",
   "license": "MIT",
   "dependencies": {
-    "@rebass/bundler": "^4.0.5",
-    "reflexbox": "*"
+    "@streetwriters/rebass-bundler": "*",
+    "@streetwriters/reflexbox": "*"
   },
   "repository": "streetwriters/rebass",
   "bugs": {
     "url": "https://github.com/streetwriters/rebass/issues"
   },
-  "gitHead": "f0f01843e9fb63ca69112d7e97a1451b27ee9e6c"
+  "gitHead": "f0f01843e9fb63ca69112d7e97a1451b27ee9e6c",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  }
 }

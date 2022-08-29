@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Link } from "rebass";
+import { Box, Flex, Link } from "@streetwriters/rebass";
 
 export default (props) => (
   <Box as="footer" py={5} color="background" bg="text">

@@ -2,7 +2,7 @@ import React from "react";
 import { Themed } from "theme-ui";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
-import { Box, Flex } from "rebass";
+import { Box, Flex } from "@streetwriters/rebass";
 import { globalHistory } from "@reach/router";
 
 const breadcrumbRoutes = ["guides", "recipes"];

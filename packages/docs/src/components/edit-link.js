@@ -1,6 +1,6 @@
 import React from "react";
 import { Location } from "@reach/router";
-import { Link } from "rebass";
+import { Link } from "@streetwriters/rebass";
 
 const base =
   "https://github.com/streetwriters/rebass/edit/master/packages/docs/src/pages";
